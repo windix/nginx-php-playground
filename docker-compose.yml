@@ -7,6 +7,7 @@ services:
     environment:
       WEBROOT: /var/www/html/public
       GIT_REPO: 'https://github.com/windix/nginx-php-playground.git'
+      GIT_BRANCH: 'run-in-sub-dir'
       GIT_EMAIL: 'windix@gmail.com'
       GIT_NAME: 'windix'
     ports:
