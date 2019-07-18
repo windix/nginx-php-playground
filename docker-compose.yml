@@ -5,7 +5,7 @@ services:
     image: richarvey/nginx-php-fpm:latest
     restart: always
     environment:
-      WEBROOT: /var/www/html
+      WEBROOT: /var/www/html/public
       GIT_REPO: 'https://github.com/windix/nginx-php-playground.git'
       GIT_EMAIL: 'windix@gmail.com'
       GIT_NAME: 'windix'
