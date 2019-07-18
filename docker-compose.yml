@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  nginx-php-fpm:
+    image: richarvey/nginx-php-fpm:latest
+    restart: always
+    environment:
+      GIT_REPO: 'https://github.com/windix/nginx-php-playground.git'
+      GIT_EMAIL: 'windix@gmail.com'
+      GIT_NAME: 'windix'
+    ports:
+      - "8080:80"
